@@ -1,4 +1,6 @@
 import React from 'react';
+import { Auto } from '../../types';
+import Request from '../../api/request';
 
 const ContentTable = () => {
     return (
