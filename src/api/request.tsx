@@ -1,17 +1,4 @@
 import axios, { Method, AxiosResponse } from 'axios';
 
-const api = axios.create({ baseURL: 'localhost:5001/' });
-
-const request = <T,>(
-    method: Method,
-    url: string,
-    params: any,
-): Promise<AxiosResponse<T>> => {
-    return api.request<T>({
-        method,
-        url,
-        params,
-    });
-};
-
-export default request;
+const api = axios.create({ baseURL: 'https://localhost:5001' });
+export default api;

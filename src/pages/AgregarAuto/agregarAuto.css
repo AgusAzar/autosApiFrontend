@@ -1,0 +1,27 @@
+.container{
+    display:flex;
+    justify-content:center;
+}
+.agregar-auto-form{
+    padding:32px;
+    border-radius:20px;
+    background-color: #3d15b0;
+}
+label{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    align-items:baseline;
+}
+.agregar-auto-form label p{
+    min-width:8em;
+}
+
+.form-input{
+    flex:1;
+    max-width:400px;
+    min-width:220px;
+    padding: 0;
+    margin:0;
+    border: 0;
+}
