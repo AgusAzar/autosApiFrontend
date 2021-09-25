@@ -1,3 +1,16 @@
+.agregar-auto-header{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+}
+.volver{
+    margin-right: 1em;
+    font-size:24px;
+    text-decoration: none;
+}
+.volver:hover{
+    text-decoration: underline;
+}
 .container{
     display:flex;
     justify-content:center;
@@ -5,7 +18,6 @@
 .agregar-auto-form{
     padding:32px;
     border-radius:20px;
-    background-color: #3d15b0;
 }
 label{
     display:flex;

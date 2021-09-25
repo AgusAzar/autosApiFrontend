@@ -7,9 +7,8 @@ type Props = {
 };
 
 const AutoItem: React.FC<Props> = ({ auto }) => {
-    const marca = useGet<Marca>(`/Marca/${auto.MarcaId}`);
     return (
-        <div className="auto-div" key={auto.Id}>
+        <div className="auto-div secondary-background-color">
             <img
                 className="auto-foto"
                 src={auto.FotoUrl}
@@ -17,7 +16,7 @@ const AutoItem: React.FC<Props> = ({ auto }) => {
             />
             <div className="auto-info">
                 <p>
-                    {marca.response?.MarcaName} {auto.Modelo}
+                    {auto.MarcaActual?.Name} {auto.Modelo}
                 </p>
             </div>
         </div>

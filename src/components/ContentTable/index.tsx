@@ -8,12 +8,13 @@ import './contentTable.css';
 const ContentTable = () => {
     const history = useHistory();
     const Autos = useGet<Auto[]>('/Autos');
+    console.log(Autos.response);
     return (
         <>
             <div className="header">
                 <h1>Autos</h1>
                 <button
-                    className="add-button"
+                    className=" secondary-background-color add-button"
                     onClick={() => history.push('/agregarAuto')}
                 >
                     Agregar auto
@@ -21,7 +22,7 @@ const ContentTable = () => {
             </div>
             <div className="grid-autos">
                 {Autos.response?.map((i) => (
-                    <AutoItem auto={i} key={i.Id} />
+                    <AutoItem key={i.AutoId} auto={i} />
                 ))}
             </div>
         </>

@@ -1,10 +1,12 @@
 export type Auto = {
-    Id: number;
+    AutoId: number;
     Modelo: string;
     MarcaId: number;
     FotoUrl: string;
+    MarcaActual: Marca;
 };
 export type Marca = {
-    Id: number;
-    MarcaName: string;
+    MarcaId: number;
+    Name: string;
+    Autos: Auto[];
 };
